@@ -55,7 +55,7 @@
     async asyncData ({ req, res }) {
       // that.$store.dispatch('mysql/GetTable',that.newTable)
       let {status, data: {results}} = await axios({
-        url: 'http://localhost:3000/mysql/findData/tablename',
+        url: 'http://localhost:8888/mysql/findData/tablename',
         method: 'get',
         params: {id: 4}
       })

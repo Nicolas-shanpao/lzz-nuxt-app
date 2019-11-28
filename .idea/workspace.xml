@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98fba4da-e83c-4b24-9f36-5613acafb973" name="Default Changelist" comment="初始化">
+    <list default="true" id="98fba4da-e83c-4b24-9f36-5613acafb973" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pm2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuxt/axios.js" beforeDir="false" afterPath="$PROJECT_DIR$/.nuxt/axios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuxt.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/nuxt.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/mysql/mysql.vue" beforeDir="false" afterPath="$PROJECT_DIR$/pages/mysql/mysql.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="tsconfig.json" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +44,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="F:\github\lzz-nuxt-app\node_modules\prettier" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="C:\Users\BimLzz\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\193.5096.13\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -43,7 +55,7 @@
       <recent name="F:\github\lzz-nuxt-app\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="build" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -103,7 +115,7 @@
       <workItem from="1574908139094" duration="215000" />
       <workItem from="1574908411415" duration="2915000" />
       <workItem from="1574911899683" duration="473000" />
-      <workItem from="1574912388455" duration="4033000" />
+      <workItem from="1574912388455" duration="8923000" />
     </task>
     <task id="LOCAL-00001" summary="打发士大夫士大夫">
       <created>1574849483444</created>
@@ -133,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574912423967</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="start">
+      <created>1574923910060</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574923910060</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +197,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="打发士大夫士大夫" />
     <MESSAGE value="初始化" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始化" />
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2052" y="598" key="#Notifications" timestamp="1574816093013">
@@ -189,10 +209,10 @@
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
     <state x="1920" y="595" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574903859667" />
-    <state x="2063" y="623" key="CommitChangelistDialog2" timestamp="1574912598600">
+    <state x="2063" y="623" key="CommitChangelistDialog2" timestamp="1574923909106">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
-    <state x="2063" y="623" key="CommitChangelistDialog2/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574912598600" />
+    <state x="2063" y="623" key="CommitChangelistDialog2/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574923909106" />
     <state x="1920" y="506" key="DiffContextDialog" timestamp="1574849217240">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
@@ -201,22 +221,22 @@
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
     <state x="2240" y="695" key="FileChooserDialogImpl/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574757153045" />
-    <state width="1059" height="559" key="GridCell.Tab.0.bottom" timestamp="1574923845578">
+    <state width="1059" height="559" key="GridCell.Tab.0.bottom" timestamp="1574928803286">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
-    <state width="1059" height="559" key="GridCell.Tab.0.bottom/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574923845578" />
-    <state width="1059" height="559" key="GridCell.Tab.0.center" timestamp="1574923845578">
+    <state width="1059" height="559" key="GridCell.Tab.0.bottom/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574928803286" />
+    <state width="1059" height="559" key="GridCell.Tab.0.center" timestamp="1574928803286">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
-    <state width="1059" height="559" key="GridCell.Tab.0.center/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574923845578" />
-    <state width="1059" height="559" key="GridCell.Tab.0.left" timestamp="1574923845578">
+    <state width="1059" height="559" key="GridCell.Tab.0.center/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574928803286" />
+    <state width="1059" height="559" key="GridCell.Tab.0.left" timestamp="1574928803286">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
-    <state width="1059" height="559" key="GridCell.Tab.0.left/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574923845578" />
-    <state width="1059" height="559" key="GridCell.Tab.0.right" timestamp="1574923845578">
+    <state width="1059" height="559" key="GridCell.Tab.0.left/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574928803286" />
+    <state width="1059" height="559" key="GridCell.Tab.0.right" timestamp="1574928803286">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
-    <state width="1059" height="559" key="GridCell.Tab.0.right/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574923845578" />
+    <state width="1059" height="559" key="GridCell.Tab.0.right/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574928803286" />
     <state x="2040" y="683" key="IDE.errors.dialog" timestamp="1574912505638">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
@@ -225,10 +245,10 @@
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
     <state x="2306" y="855" key="VCS.ChangelistChooser/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574908700227" />
-    <state x="2052" y="673" key="Vcs.Push.Dialog.v2" timestamp="1574921185225">
+    <state x="2052" y="673" key="Vcs.Push.Dialog.v2" timestamp="1574923917463">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>
-    <state x="2052" y="673" key="Vcs.Push.Dialog.v2/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574921185225" />
+    <state x="2052" y="673" key="Vcs.Push.Dialog.v2/1920.0.1080.1880/0.0.1920.1040@1920.0.1080.1880" timestamp="1574923917463" />
     <state x="2252" y="857" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1574912264802">
       <screen x="1920" y="0" width="1080" height="1880" />
     </state>

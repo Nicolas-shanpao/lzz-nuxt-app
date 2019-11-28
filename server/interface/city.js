@@ -1,13 +1,13 @@
-import Router from 'koa-router'
+import Router from "koa-router";
 
 const router = new Router({
-  prefix: '/city'
-})
+  prefix: "/city"
+});
 
-router.get('/list', async (ctx) => {
+router.get("/list", async ctx => {
   ctx.body = {
-    list: ['北京', '天津']
-  }
-})
+    list: ["北京", "天津"]
+  };
+});
 
-export default router
+export default router;

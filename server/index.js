@@ -3,8 +3,10 @@ import koaBody from "koa-body";
 import consola from "consola";
 const { Nuxt, Builder } = require("nuxt");
 // 引入路由(接口)
+import userInterface from "./interface/user";
 import cityInterface from "./interface/city";
 import mysqlInterface from "./interface/mysql";
+import fileInterface from "./interface/file";
 
 const app = new Koa();
 
@@ -34,8 +36,10 @@ async function start() {
     })
   );
   // 引入服务端路由
+  app.use(userInterface.routes()).use(userInterface.allowedMethods());
   app.use(cityInterface.routes()).use(cityInterface.allowedMethods());
   app.use(mysqlInterface.routes()).use(mysqlInterface.allowedMethods());
+  app.use(fileInterface.routes()).use(fileInterface.allowedMethods());
   app.use(ctx => {
     ctx.status = 200;
     ctx.respond = false; // Bypass Koa's built-in response handling

@@ -7,4 +7,6 @@ export default {
   get_list:'/mysql/findData',   // 获取列表
   update_table:'/mysql/updateData',   // 更新数据
   insert_data:'/mysql/insertData',   // 新增数据
+  // 文件系统
+  upload_file:'/file/uploadFile',   // 新增数据
 }

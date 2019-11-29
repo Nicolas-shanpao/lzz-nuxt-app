@@ -8,6 +8,7 @@ const _d8b09f82 = () => interopDefault(import('..\\pages\\search.vue' /* webpack
 const _f6ae9932 = () => interopDefault(import('..\\pages\\mysql\\createTable.vue' /* webpackChunkName: "pages_mysql_createTable" */))
 const _3ae38d97 = () => interopDefault(import('..\\pages\\mysql\\mysql.vue' /* webpackChunkName: "pages_mysql_mysql" */))
 const _3a886c1d = () => interopDefault(import('..\\pages\\mysql\\showTables.vue' /* webpackChunkName: "pages_mysql_showTables" */))
+const _36d0e835 = () => interopDefault(import('..\\pages\\upload\\uploadFile.vue' /* webpackChunkName: "pages_upload_uploadFile" */))
 const _96330aea = () => interopDefault(import('..\\pages\\index.vue' /* webpackChunkName: "pages_index" */))
 
 Vue.use(Router)
@@ -39,6 +40,10 @@ export const routerOptions = {
     path: "/mysql/showTables",
     component: _3a886c1d,
     name: "mysql-showTables"
+  }, {
+    path: "/upload/uploadFile",
+    component: _36d0e835,
+    name: "upload-uploadFile"
   }, {
     path: "/",
     component: _96330aea,

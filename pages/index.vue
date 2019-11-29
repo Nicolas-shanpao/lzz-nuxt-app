@@ -7,6 +7,9 @@
     <nuxt-link class="button" to="/mysql/showTables">
       About page
     </nuxt-link>
+    <nuxt-link class="button" to="/upload/uploadFile">
+      uploadFile
+    </nuxt-link>
   </section>
 </template>
 

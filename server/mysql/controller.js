@@ -86,6 +86,17 @@ export default {
   findTableColumn(name) {
     let sql = `select * from information_schema.COLUMNS where table_name = '${name}';`;
     return query(sql);
+  },
+  // 用户登录
+  userLogin(data) {
+    let values = [data.username, data.password];
+    let sql = "select * from lzz_users where username=? and password=?;";
+    return query(sql, values);
+  },
+  userInfo(data) {
+    let values = [data.id];
+    let sql = "select * from lzz_users where id=?;";
+    return query(sql, values);
   }
 };
 

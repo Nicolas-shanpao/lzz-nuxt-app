@@ -31,7 +31,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["@/plugins/element-ui", "@/plugins/axios.js"],
+  plugins: [
+    "@/plugins/element-ui",
+    "@/plugins/axios.js"
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -54,7 +57,7 @@ module.exports = {
     extend(config, ctx) {}
   },
   server: {
-    host: '0.0.0.0',
+    host: "0.0.0.0",
     port: 8888
   }
 };

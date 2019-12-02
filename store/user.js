@@ -1,6 +1,7 @@
 import { login, getUser } from "@/api/user";
 import { getToken, setCookies, setToken, removeToken } from "@/utils/cookies";
 
+console.log(getToken());
 export const state = () => ({
   token: getToken()
 });

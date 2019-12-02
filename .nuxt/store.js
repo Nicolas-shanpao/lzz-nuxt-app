@@ -21,6 +21,7 @@ void (function updateModules () {
 
   resolveStoreModules(require('..\\store\\mysql.js'), 'mysql.js')
   resolveStoreModules(require('..\\store\\upload.js'), 'upload.js')
+  resolveStoreModules(require('..\\store\\user.js'), 'user.js')
 
   // If the environment supports hot reloading...
 
@@ -30,6 +31,7 @@ void (function updateModules () {
       '..\\store\\index.js',
       '..\\store\\mysql.js',
       '..\\store\\upload.js',
+      '..\\store\\user.js',
     ], () => {
       // Update `root.modules` with the latest definitions.
       updateModules()

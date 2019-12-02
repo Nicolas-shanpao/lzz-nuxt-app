@@ -12,10 +12,13 @@
     </nuxt-link>
   </section>
 </template>
-
+<script>
+export default {
+  middleware: "auth"
+};
+</script>
 <style scoped>
-.title
-{
+.title {
   margin: 50px 0;
 }
 </style>

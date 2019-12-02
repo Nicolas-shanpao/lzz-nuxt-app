@@ -4,6 +4,7 @@ import { interopDefault } from './utils'
 import scrollBehavior from './router.scrollBehavior.js'
 
 const _d5a2c074 = () => interopDefault(import('..\\pages\\about.vue' /* webpackChunkName: "pages_about" */))
+const _7e8e1da2 = () => interopDefault(import('..\\pages\\login.vue' /* webpackChunkName: "pages_login" */))
 const _d8b09f82 = () => interopDefault(import('..\\pages\\search.vue' /* webpackChunkName: "pages_search" */))
 const _f6ae9932 = () => interopDefault(import('..\\pages\\mysql\\createTable.vue' /* webpackChunkName: "pages_mysql_createTable" */))
 const _3ae38d97 = () => interopDefault(import('..\\pages\\mysql\\mysql.vue' /* webpackChunkName: "pages_mysql_mysql" */))
@@ -24,6 +25,10 @@ export const routerOptions = {
     path: "/about",
     component: _d5a2c074,
     name: "about"
+  }, {
+    path: "/login",
+    component: _7e8e1da2,
+    name: "login"
   }, {
     path: "/search",
     component: _d8b09f82,

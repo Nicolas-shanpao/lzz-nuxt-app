@@ -8,13 +8,16 @@
   </el-container>
 </template>
 <script>
-    export default {
-        middleware: "auth",
-        layout: 'mysql',
-    };
+export default {
+  layout: "mysql",
+  middleware: "auth",
+  mounted() {
+    console.log(1);
+  }
+};
 </script>
 <style scoped>
-  .title {
-    margin: 50px 0;
-  }
+.title {
+  margin: 50px 0;
+}
 </style>

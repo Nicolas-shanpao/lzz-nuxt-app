@@ -6,7 +6,7 @@ export default ({
   res,
 }) => {
   const { auth } = store.state
-  if (!auth) {
-    redirect('/login')
+  if (auth) {
+    redirect('/')
   }
 }

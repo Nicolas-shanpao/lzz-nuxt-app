@@ -1,18 +1,26 @@
 <template>
-  <el-container>
-    <el-header>Header</el-header>
-    <el-container>
-      <el-aside width="200px">Aside</el-aside>
-      <el-main>Main</el-main>
-    </el-container>
-  </el-container>
+  <div>
+    {{ userinfo }}
+  </div>
 </template>
 <script>
+import axios from "axios";
+
 export default {
-  layout: "mysql",
+  layout: "main",
   middleware: "auth",
-  mounted() {
-    console.log(1);
+  mounted() {},
+  data() {
+    return {
+      userinfo: []
+    };
+  },
+  async asyncData() {
+    let data = await Promise.all([
+      axios.post("http://localhost:8888/user/userinfo"),
+      axios.get("http://localhost:8888/city/list")
+    ]);
+    return { project: data[0].data };
   }
 };
 </script>

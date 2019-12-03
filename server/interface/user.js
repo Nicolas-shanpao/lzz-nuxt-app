@@ -34,6 +34,7 @@ router.post("/login", async ctx => {
 });
 router.post("/userinfo", async ctx => {
   let token = ctx.request.header.authorization;
+  console.log(ctx.request)
   let res, userinfo, code, msg;
   if (token) {
     let check = proving(token);

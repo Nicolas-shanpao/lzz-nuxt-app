@@ -1,26 +1,32 @@
 <template>
   <div>
     {{ userinfo }}
+    {{ list }}
+    <el-button @click="getinfo()">xxxxxx</el-button>
   </div>
 </template>
 <script>
-import axios from "axios";
-
+import { getUserinfo, getCity } from "@/api/user";
 export default {
   layout: "main",
   middleware: "auth",
-  mounted() {},
   data() {
     return {
-      userinfo: []
+      userinfo: [],
+      list: []
     };
   },
-  async asyncData() {
-    let data = await Promise.all([
-      axios.post("http://localhost:8888/user/userinfo"),
-      axios.get("http://localhost:8888/city/list")
-    ]);
-    return { project: data[0].data };
+  async mounted() {
+    let data = await Promise.all([getCity()]);
+    console.log(data);
+    return { list: data[0].data };
+  },
+  methods: {
+    async getinfo() {
+      let that = this;
+      let { data } = await getUserinfo();
+      that.userinfo = data.userinfo;
+    }
   }
 };
 </script>

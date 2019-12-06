@@ -11,5 +11,6 @@ export default {
   upload_file: "/file/uploadFile", // 新增数据
   // 用户模块
   login: "/user/login", // 获取用户信息
-  get_userinfo: "/user/userinfo" // 获取用户信息
+  get_userinfo: "/user/userinfo", // 获取用户信息
+  get_city: "/city/list" // 获取城市列表
 };

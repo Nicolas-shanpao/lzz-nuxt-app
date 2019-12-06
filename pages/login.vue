@@ -60,6 +60,7 @@
 
 <script>
 import { setToken } from "@/utils/cookies";
+import http from '../plugins/http'
 
 export default {
   name: "login",
@@ -100,7 +101,9 @@ export default {
 
   created() {},
 
-  mounted() {},
+  mounted() {
+    console.log(this._axios)
+  },
 
   destroyed() {},
 

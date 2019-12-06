@@ -6,7 +6,9 @@ const router = new Router({
 
 router.get("/list", async ctx => {
   ctx.body = {
-    list: ["北京", "天津"]
+    data: {
+      list: ["北京", "天津"]
+    }
   };
 });
 

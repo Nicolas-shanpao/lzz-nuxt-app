@@ -1,4 +1,4 @@
-import axios from '@/plugins/axios'
+import axios from '@/plugins/http'
 import api from '@/api/api'
 import qs from 'qs'
 

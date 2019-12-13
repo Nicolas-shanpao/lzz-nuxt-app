@@ -16,9 +16,10 @@
 import { getCity } from "@/api/user";
 export default {
   name: "asyncData",
-  async asyncData({ req, res }) {
-    let list = await getCity();
-    return { list: list };
+  async asyncData(context) {
+    console.log(context.$axios);
+    // let list = await getCity();
+    return { list: 'list' };
   }
 };
 </script>

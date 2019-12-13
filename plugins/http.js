@@ -1,7 +1,9 @@
 import axios from "axios";
 import { getToken } from "@/utils/cookies";
 
-const _axios = axios.create({});
+const _axios = axios.create({
+  // baseURL: "http://localhost:8888/"
+});
 _axios.interceptors.request.use(
   config => {
     if (getToken()) {

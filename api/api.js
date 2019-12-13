@@ -12,5 +12,5 @@ export default {
   // 用户模块
   login: "/user/login", // 获取用户信息
   get_userinfo: "/user/userinfo", // 获取用户信息
-  get_city: "/city/list" // 获取城市列表
+  get_city: "http://localhost:8888/city/list" // 获取城市列表
 };

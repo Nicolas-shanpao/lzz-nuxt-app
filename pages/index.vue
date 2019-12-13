@@ -3,6 +3,7 @@
     {{ userinfo }}
     {{ list }}
     <el-button @click="getinfo()">xxxxxx</el-button>
+    <nuxt-link to="/axios/asyncData">asyncData</nuxt-link>
   </div>
 </template>
 <script>

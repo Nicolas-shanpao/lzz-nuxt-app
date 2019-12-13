@@ -8,24 +8,17 @@
 
 <template>
   <div class="asyncData">
-    {{ city }}
+    {{ list }}
   </div>
 </template>
 
 <script>
-import { getUserinfo, getCity } from "@/api/user";
+import { getCity } from "@/api/user";
 export default {
   name: "asyncData",
-  data() {
-    return {
-      city: []
-    };
-  },
-  async asyncData() {
-    let { list } = await getCity().then(res => {
-      console.log(res)
-    });
-    console.log(list);
+  async asyncData({ req, res }) {
+    let list = await getCity();
+    return { list: list };
   }
 };
 </script>

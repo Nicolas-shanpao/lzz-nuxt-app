@@ -18,6 +18,7 @@ _axios.interceptors.request.use(
 _axios.interceptors.response.use(
   response => {
     const res = response.data;
+    // console.log(res)
     return res;
   },
   error => {

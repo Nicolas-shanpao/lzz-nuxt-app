@@ -2,8 +2,19 @@
   <div>
     {{ userinfo }}
     {{ list }}
-    <el-button @click="getinfo()">xxxxxx</el-button>
-    <nuxt-link to="/axios/asyncData">asyncData</nuxt-link>
+    <el-button @click="getinfo()">获取个人信息</el-button>
+    <nuxt-link to="/test/asyncData">
+      <el-button>asyncData</el-button>
+    </nuxt-link>
+       <nuxt-link to="/test/createTable">
+      <el-button>createTable</el-button>
+      </nuxt-link>
+    <nuxt-link to="/test/mysql">
+      <el-button>mysql</el-button>
+      </nuxt-link>
+    <nuxt-link to="/test/showTables">
+      <el-button>showTables</el-button>
+    </nuxt-link>
   </div>
 </template>
 <script>

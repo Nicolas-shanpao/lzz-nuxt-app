@@ -58,10 +58,7 @@ export const actions = {
   },
 
   async GetTableList({ commit }, params) {
-    const { res } = await this.$axios({
-      methods: "get",
-      url: api.get_table_list + "/" + params
-    });
+    const { res } = await getTableList(params);
     commit("SET_TABLE_LIST", res);
   },
   FindTableColumn({ commit }, data) {

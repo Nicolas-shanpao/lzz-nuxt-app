@@ -19,7 +19,7 @@ async function start() {
   const nuxt = new Nuxt(config);
 
   const {
-    host = process.env.HOST || "127.0.0.1",
+    host = process.env.HOST || "0.0.0.0",
     port = process.env.PORT || 8888
   } = nuxt.options.server;
 

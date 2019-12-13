@@ -33,7 +33,7 @@
 
     //ssr剖析  下发script标签，在window上挂一个对象(模板,数据)
     async asyncData () {
-      let {status, data: {list}} = await axios.get('http://localhost:3000/city/list')
+      let {status, data: {list}} = await axios.get('/city/list')
       if (status === 200) {
         return {
           list
